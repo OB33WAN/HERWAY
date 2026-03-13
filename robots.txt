@@ -1,0 +1,13 @@
+User-agent: *
+Allow: /
+Allow: /index.html
+Allow: /pages/
+Allow: /css/
+Allow: /js/
+Allow: /data/
+Allow: /assets/
+
+Disallow: /admin/
+Disallow: /private/
+
+Sitemap: https://wanderlusttraveladvisory.com/sitemap.txt

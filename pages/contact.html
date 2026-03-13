@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Wanderlust for example itinerary enquiries or custom trip planning.">
+        <meta name="robots" content="index, follow">
+        <meta name="geo.region" content="GB-LND">
+        <meta name="geo.placename" content="London">
+        <meta name="geo.position" content="51.5072;-0.1276">
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="Contact | Wanderlust">
+        <meta property="og:description" content="Example itinerary enquiries and bespoke trip planning support from an independent travel advisor.">
+    <title>Contact | Wanderlust</title>
+        <link rel="canonical" href="https://wanderlusttraveladvisory.com/pages/contact.html">
+    <link rel="apple-touch-icon" href="../assets/images/logo.svg">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/animations.css">
+
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "TravelAgency",
+            "name": "Wanderlust",
+            "url": "https://wanderlusttraveladvisory.com",
+            "telephone": "+44-20-7946-1200",
+            "email": "hello@wanderlusttraveladvisory.com",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "London",
+                "addressCountry": "GB"
+            },
+            "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": 51.5072,
+                "longitude": -0.1276
+            }
+        }
+        </script>
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="navbar-container">
+                <a href="../index.html" class="brand"><span class="brand-icon">✦</span><span class="brand-text">Wanderlust</span></a>
+                <button class="mobile-menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false"><span></span><span></span><span></span></button>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="../index.html" class="nav-link">Home</a></li>
+                    <li><a href="properties.html" class="nav-link">Packages</a></li>
+                    <li><a href="booking.html" class="nav-link">Bespoke Trips</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    <li><button class="theme-toggle" id="themeToggle">☀</button></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main">
+        <section class="hero hero-mini">
+            <div class="hero-content hero-single-col">
+                <div class="hero-text">
+                    <h1 class="hero-title">Contact Your Travel Advisor</h1>
+                    <p class="hero-subtitle">Use this page for example journey questions, tailoring requests, availability checks, or general planning support.</p>
+                    <p class="motto-subline">Experience pricing only, flights excluded, rates based on live supplier prices.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <div class="cta-container">
+                <div class="cta-options">
+                    <article class="cta-card"><h3>Email</h3><p><a href="mailto:hello@wanderlusttraveladvisory.com">hello@wanderlusttraveladvisory.com</a></p><p class="muted">Typical response within one business day.</p></article>
+                    <article class="cta-card"><h3>Phone</h3><p><a href="tel:+442079461200">+44 20 7946 1200</a></p><p class="muted">Mon-Fri, 9:00-18:00 UK time.</p></article>
+                    <article class="cta-card"><h3>Planning Studio</h3><p>Remote-first advisory with virtual consultations worldwide.</p></article>
+                </div>
+            </div>
+        </section>
+
+        <section class="padding-4 max-width-900">
+            <h2 class="text-center-inline margin-bottom-2">Example Journey Enquiry</h2>
+            <form id="packageEnquiryForm" name="packageEnquiryForm" class="form-card margin-bottom-4" method="POST" action="https://formsubmit.co/hello@wanderlusttraveladvisory.com" data-remote-submit="true">
+                <input type="hidden" name="_subject" value="New Example Journey Enquiry">
+                <input type="hidden" name="_template" value="table">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="source" value="example-journey-enquiry-form">
+                <div class="grid-2-cols-gap">
+                    <div class="form-group">
+                        <label for="name">Name *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                </div>
+                <div class="grid-2-cols-gap">
+                    <div class="form-group">
+                        <label for="package">Example Journey of Interest *</label>
+                        <input type="text" id="package" name="package" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="travellers">Travellers *</label>
+                        <input type="number" id="travellers" name="travellers" min="1" required>
+                    </div>
+                </div>
+                <div class="grid-2-cols-gap">
+                    <div class="form-group">
+                        <label for="month">Preferred Travel Month *</label>
+                        <input type="text" id="month" name="month" placeholder="e.g. September 2026" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="budget">Estimated Budget *</label>
+                        <input type="text" id="budget" name="budget" placeholder="e.g. 6,000 GBP total" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message *</label>
+                    <textarea id="message" name="message" required placeholder="Share any questions, room preferences, activity interests, or solo traveller requests."></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary width-full">Send Enquiry</button>
+            </form>
+
+            <h2 class="text-center-inline margin-bottom-2">General Enquiry</h2>
+            <form id="generalContactForm" name="generalContactForm" class="form-card" method="POST" action="https://formsubmit.co/hello@wanderlusttraveladvisory.com" data-remote-submit="true">
+                <input type="hidden" name="_subject" value="New General Travel Enquiry">
+                <input type="hidden" name="_template" value="table">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="source" value="general-contact-form">
+                <div class="grid-2-cols-gap">
+                    <div class="form-group"><label for="generalName">Name *</label><input type="text" id="generalName" name="generalName" required></div>
+                    <div class="form-group"><label for="generalEmail">Email *</label><input type="email" id="generalEmail" name="generalEmail" required></div>
+                </div>
+                <div class="form-group"><label for="generalSubject">Subject *</label><input type="text" id="generalSubject" name="generalSubject" required></div>
+                <div class="form-group"><label for="generalMessage">How can I help? *</label><textarea id="generalMessage" name="generalMessage" required></textarea></div>
+                <button type="submit" class="btn btn-secondary width-full">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section"><h4>Wanderlust</h4><p>Bespoke example journeys and custom travel planning.</p></div>
+            <div class="footer-section"><h4>Explore</h4><ul><li><a href="properties.html">Packages</a></li><li><a href="booking.html">Bespoke</a></li><li><a href="services.html">Services</a></li></ul></div>
+            <div class="footer-section"><h4>Legal</h4><ul><li><a href="privacy.html">Privacy</a></li><li><a href="terms.html">Terms</a></li><li><a href="gdpr.html">GDPR</a></li><li><a href="cookies.html">Cookies</a></li></ul><button type="button" class="text-button cookie-settings-trigger">Manage Cookies</button></div>
+        </div>
+        <div class="footer-bottom"><p>&copy; 2026 Wanderlust.</p></div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/forms.js"></script>
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        const packageField = document.getElementById('package');
+        const messageField = document.getElementById('message');
+        if (params.get('package')) {
+            packageField.value = params.get('package');
+        }
+
+        const stored = sessionStorage.getItem('wanderlust_selected_package');
+        if (stored && !packageField.value) {
+            const pkg = JSON.parse(stored);
+            packageField.value = pkg.title;
+        }
+
+        if (params.get('solo') === '1' && messageField) {
+            messageField.value = 'I am enquiring as a solo traveller and would like a bespoke solo deal option.';
+        }
+    </script>
+</body>
+</html>

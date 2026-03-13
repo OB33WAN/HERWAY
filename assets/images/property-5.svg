@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="skyGrad5" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#2c5f7f;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1a3a52;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="600" fill="url(#skyGrad5)"/>
+  
+  <!-- Townhouse Row -->
+  <rect x="100" y="220" width="150" height="330" fill="#e8e8e8" stroke="#1a3a52" stroke-width="2"/>
+  <rect x="270" y="220" width="150" height="330" fill="#f5f5f5" stroke="#1a3a52" stroke-width="2"/>
+  <rect x="440" y="220" width="150" height="330" fill="#e8e8e8" stroke="#1a3a52" stroke-width="2"/>
+  
+  <!-- Roofs -->
+  <polygon points="175,200 80,220 270,220" fill="#1a3a52"/>
+  <polygon points="345,200 250,220 440,220" fill="#1a3a52"/>
+  <polygon points="515,200 420,220 610,220" fill="#1a3a52"/>
+  
+  <!-- Windows -->
+  <rect x="130" y="280" width="40" height="60" fill="#2c5f7f" opacity="0.7"/>
+  <rect x="180" y="280" width="40" height="60" fill="#2c5f7f" opacity="0.7"/>
+  <rect x="300" y="280" width="40" height="60" fill="#2c5f7f" opacity="0.7"/>
+  <rect x="350" y="280" width="40" height="60" fill="#2c5f7f" opacity="0.7"/>
+  <rect x="470" y="280" width="40" height="60" fill="#2c5f7f" opacity="0.7"/>
+  <rect x="520" y="280" width="40" height="60" fill="#2c5f7f" opacity="0.7"/>
+  
+  <!-- Doors -->
+  <rect x="145" y="450" width="60" height="100" fill="#c9a961" stroke="#1a3a52" stroke-width="2"/>
+  <rect x="315" y="450" width="60" height="100" fill="#c9a961" stroke="#1a3a52" stroke-width="2"/>
+  <rect x="485" y="450" width="60" height="100" fill="#c9a961" stroke="#1a3a52" stroke-width="2"/>
+  
+  <!-- Ground -->
+  <rect x="0" y="550" width="800" height="50" fill="#1a3a52" opacity="0.3"/>
+  
+  <!-- Property ID Text -->
+  <text x="400" y="580" text-anchor="middle" font-family="Playfair Display, serif" font-size="24" fill="#c9a961" font-weight="600">Townhouse</text>
+</svg>
