@@ -69,6 +69,8 @@ function renderPackageDetail() {
                     <h3>Sample Itinerary</h3>
                     <ul class="card-list">${itineraryList}</ul>
 
+                    ${pkg.type === 'scuba' ? '<h3>Scuba Pricing Guidance</h3><p class="muted">Prices may vary depending on your certification level, preferred dive profile, and any specialist support or equipment required.</p>' : ''}
+
                     <p class="muted">Every itinerary shown here is an example starting point and can be reshaped around certification level, preferred pace, hotel style, and travel dates.</p>
 
                     <div class="property-actions">

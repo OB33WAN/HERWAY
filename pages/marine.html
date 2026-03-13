@@ -147,6 +147,7 @@
                             <p class="journey-subcategory"><strong>Duration:</strong> ${pkg.durationDays} days</p>
                             <p class="property-description">${pkg.description}</p>
                             <p class="pricing-mini-note"><strong>Price note:</strong> Experience-only guide price. Flights excluded.</p>
+                            ${pkg.type === 'scuba' ? '<p class="pricing-mini-note"><strong>Certification note:</strong> Prices may vary depending on your certification level and dive requirements.</p>' : ''}
                             <ul class="card-list">${highlights}</ul>
                             <div class="property-actions">
                                 <a class="property-btn-primary" href="${pkg.detailPage}">View Example</a>
