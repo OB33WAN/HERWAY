@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 192" width="192" height="192">
+  <defs>
+    <linearGradient id="maskGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FF6B9D;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#E84B7E;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Circle background for maskable icon -->
+  <circle cx="96" cy="96" r="96" fill="url(#maskGrad)"/>
+  
+  <!-- Stylized car -->
+  <g transform="translate(32, 50)">
+    <!-- Car body -->
+    <rect x="15" y="35" width="90" height="50" rx="6" fill="white"/>
+    <!-- Roof -->
+    <polygon points="30,35 90,35 85,18 35,18" fill="white"/>
+    <!-- Windows -->
+    <rect x="40" y="22" width="20" height="16" fill="#FF6B9D" opacity="0.4" rx="3"/>
+    <rect x="70" y="22" width="20" height="16" fill="#FF6B9D" opacity="0.4" rx="3"/>
+    <!-- Wheels -->
+    <circle cx="35" cy="88" r="14" fill="white"/>
+    <circle cx="85" cy="88" r="14" fill="white"/>
+    <!-- Wheel hubs -->
+    <circle cx="35" cy="88" r="8" fill="#FF6B9D"/>
+    <circle cx="85" cy="88" r="8" fill="#FF6B9D"/>
+  </g>
+</svg>

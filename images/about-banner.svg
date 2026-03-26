@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FF8CB3;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#6B5B95;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#grad2)"/>
+  
+  <!-- Stylized group of women -->
+  <g transform="translate(150, 100)">
+    <!-- Woman 1 -->
+    <circle cx="0" cy="0" r="40" fill="white" opacity="0.8"/>
+    <path d="M -30,40 L -30,120 M -20,60 L -50,100 M 20,60 L 50,100 M -30,120 L -40,180 M 30,120 L 40,180" 
+          stroke="white" stroke-width="8" fill="none" stroke-linecap="round" opacity="0.8"/>
+  </g>
+  
+  <g transform="translate(350, 80)">
+    <!-- Woman 2 -->
+    <circle cx="0" cy="0" r="45" fill="white" opacity="0.85"/>
+    <path d="M -35,45 L -35,125 M -20,65 L -55,105 M 25,65 L 55,105 M -35,125 L -45,190 M 35,125 L 45,190" 
+          stroke="white" stroke-width="8" fill="none" stroke-linecap="round" opacity="0.85"/>
+  </g>
+  
+  <g transform="translate(550, 110)">
+    <!-- Woman 3 -->
+    <circle cx="0" cy="0" r="38" fill="white" opacity="0.8"/>
+    <path d="M -28,38 L -28,115 M -18,58 L -48,98 M 22,58 L 48,98 M -28,115 L -38,175 M 28,115 L 38,175" 
+          stroke="white" stroke-width="8" fill="none" stroke-linecap="round" opacity="0.8"/>
+  </g>
+  
+  <!-- Taxi -->
+  <g transform="translate(200, 300)">
+    <!-- Car body -->
+    <rect x="0" y="40" width="150" height="70" rx="8" fill="white" opacity="0.9"/>
+    <!-- Roof -->
+    <polygon points="20,40 130,40 115,15 35,15" fill="white" opacity="0.9"/>
+    <!-- Windows -->
+    <rect x="40" y="20" width="30" height="25" fill="#87CEEB" opacity="0.5"/>
+    <rect x="80" y="20" width="30" height="25" fill="#87CEEB" opacity="0.5"/>
+    <!-- Wheels -->
+    <circle cx="40" cy="115" r="18" fill="#333"/>
+    <circle cx="110" cy="115" r="18" fill="#333"/>
+    <!-- Wheel centers -->
+    <circle cx="40" cy="115" r="10" fill="#666"/>
+    <circle cx="110" cy="115" r="10" fill="#666"/>
+  </g>
+  
+  <text x="400" y="450" font-size="32" font-weight="bold" fill="white" text-anchor="middle">Safe. Professional. Reliable.</text>
+</svg>

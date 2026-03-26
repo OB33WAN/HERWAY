@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a Taxi - HERWAY</title>
+    <link rel="manifest" href="manifest.json">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html" class="logo brand-merge"><span class="part-her">HER</span><span class="part-way">WAY</span></a>
+                <span class="tagline">Women by Women</span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link">Safety & About</a></li>
+                <li class="nav-item"><a href="book.html" class="nav-link active">Book Now</a></li>
+                <li class="nav-item"><a href="drivers.html" class="nav-link">Become a Driver</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="page-header">
+        <h1>Book Your Taxi</h1>
+        <p>Women by women taxi booking with verified female lead passenger checks and clear journey disclosures</p>
+    </section>
+
+    <div class="container">
+        <section class="booking-section">
+            <div class="booking-methods">
+                <div class="method-card">
+                    <h2>WhatsApp Booking</h2>
+                    <p>Quick and easy booking via WhatsApp. Send us a message with your requirements:</p>
+                    <ul class="booking-requirements">
+                        <li>📍 Pickup location and time</li>
+                        <li>📍 Destination</li>
+                        <li>👥 Number of passengers</li>
+                        <li>📋 Any special requests</li>
+                    </ul>
+                    <a href="https://wa.me/YOUR_WHATSAPP_NUMBER" class="btn btn-primary btn-large">Message on WhatsApp</a>
+                </div>
+
+                <div class="method-card">
+                    <h2>Contact Form Booking</h2>
+                    <p>Fill out the form below and we'll get back to you within 30 minutes.</p>
+                    <form id="bookingForm" class="booking-form">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone Number *</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="pickup">Pickup Location *</label>
+                            <input type="text" id="pickup" name="pickup" placeholder="Enter full address" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="destination">Destination *</label>
+                            <input type="text" id="destination" name="destination" placeholder="Enter full address" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="date">Date of Travel *</label>
+                            <input type="date" id="date" name="date" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="time">Preferred Time *</label>
+                            <input type="time" id="time" name="time" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="passengers">Number of Passengers *</label>
+                            <select id="passengers" name="passengers" required>
+                                <option value="">Select number of passengers</option>
+                                <option value="1">1 Passenger</option>
+                                <option value="2">2 Passengers</option>
+                                <option value="3">3 Passengers</option>
+                                <option value="4">4 Passengers</option>
+                                <option value="5">5 Passengers</option>
+                                <option value="6">6+ Passengers</option>
+                            </select>
+                        </div>
+
+                        <div class="form-section-title">Passenger Composition</div>
+                        <p class="help-text">Bookings are female-verified. If anyone else is traveling (for example an elderly grandfather or two teenage boys), please describe this clearly in notes.</p>
+
+                        <div class="checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="maleTraveler" name="maleTraveler">
+                                Traveling with a man
+                            </label>
+                            <p class="help-text">Please let us know if there will be one male passenger traveling with you. Drivers need to be aware.</p>
+                        </div>
+
+                        <div class="checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="childTraveler" name="childTraveler">
+                                Traveling with child(ren)
+                            </label>
+                            <p class="help-text">Please tell us if children are traveling and how many, so we can prepare the right vehicle setup.</p>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="driverPreference">Driver Preference</label>
+                            <select id="driverPreference" name="driverPreference">
+                                <option value="female-first">Female driver preferred (default)</option>
+                                <option value="male-acceptable">Male driver acceptable if needed</option>
+                                <option value="no-preference">No driver gender preference</option>
+                            </select>
+                            <p class="help-text">HERWAY is women by women and female-first. Male drivers may be assigned only where requested or necessary.</p>
+                        </div>
+
+                        <div id="childDetails" class="form-section hidden">
+                            <label for="numChildren">Number of Children</label>
+                            <input type="number" id="numChildren" name="numChildren" min="1" max="10">
+
+                            <label for="childAges">Ages of Children</label>
+                            <input type="text" id="childAges" name="childAges" placeholder="e.g., 5, 8, 12">
+
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="carSeat" name="carSeat">
+                                Child car seat required
+                            </label>
+
+                            <label for="childSeatsNeeded">Do you need child seats provided?</label>
+                            <select id="childSeatsNeeded" name="childSeatsNeeded">
+                                <option value="">Select an option</option>
+                                <option value="no">No</option>
+                                <option value="yes">Yes</option>
+                            </select>
+
+                            <div id="childSeatCountGroup" class="hidden">
+                                <label for="childSeatCount">How many child seats are needed?</label>
+                                <input type="number" id="childSeatCount" name="childSeatCount" min="1" max="6" placeholder="e.g., 1">
+                            </div>
+                            <p class="help-text">Please tell us exactly how many child seats you need so we can assign the right vehicle.</p>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="tripType">Trip Type *</label>
+                            <select id="tripType" name="tripType" required>
+                                <option value="">Select trip type</option>
+                                <option value="standard">Standard Taxi Ride</option>
+                                <option value="airport">Airport Transfer</option>
+                                <option value="school">School Run</option>
+                                <option value="hourly">Full-Day Hire (Hourly Rate)</option>
+                            </select>
+                        </div>
+
+                        <div id="airportOptions" class="form-section hidden">
+                            <label for="airport">Airport *</label>
+                            <select id="airport" name="airport">
+                                <option value="">Select airport</option>
+                                <option value="lhr">Heathrow (LHR)</option>
+                                <option value="lgw">Gatwick (LGW)</option>
+                                <option value="std">Stansted (STD)</option>
+                                <option value="ltn">Luton (LTN)</option>
+                                <option value="other">Other</option>
+                            </select>
+                            <p class="help-text">Note: Heathrow includes short-stay parking charges in the final quote.</p>
+                        </div>
+
+                        <div id="hourlyOptions" class="form-section hidden">
+                            <label for="hours">Number of Hours Needed *</label>
+                            <input type="number" id="hours" name="hours" min="1" max="24" placeholder="e.g., 8">
+                            <p class="help-text">Final pricing is confirmed after review based on journey details, timing, and location.</p>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="specialRequests">Special Requests or Notes</label>
+                            <textarea id="specialRequests" name="specialRequests" rows="4" placeholder="Please include passenger context if relevant (e.g., elderly grandfather, two teenage boys), plus any accessibility needs."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-large">Get a Quote</button>
+                        <p class="form-note">We'll respond within 30 minutes with pricing and confirmation.</p>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing Info Section -->
+        <section class="pricing-info">
+            <h2>Service Pricing</h2>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <h3>Standard Rides</h3>
+                    <p class="small">Calculated from distance, pickup/drop-off location, and time of travel</p>
+                </div>
+                <div class="pricing-card">
+                    <h3>Airport Transfers</h3>
+                    <p class="small">Based on airport, route, timing, and any applicable parking or waiting charges</p>
+                </div>
+                <div class="pricing-card">
+                    <h3>School Runs</h3>
+                    <p class="small">Based on schedule, distance, number of stops, and location</p>
+                </div>
+                <div class="pricing-card">
+                    <h3>Full-Day Hire</h3>
+                    <p class="small">Priced after reviewing total hours, route plan, and service requirements</p>
+                </div>
+            </div>
+            <p class="pricing-note">We do not publish fixed set prices. Every fare is confirmed after a booking request and is based on distance, timing, location, passenger requirements, and journey complexity.</p>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>HERWAY</h4>
+                <p>Women by women taxi service providing safe, professional ground transportation.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="book.html">Book a Taxi</a></li>
+                    <li><a href="drivers.html">Become a Driver</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Get in Touch</h4>
+                <p>WhatsApp: <a href="https://wa.me/YOUR_WHATSAPP_NUMBER">Message us</a></p>
+                <p>Email: <a href="mailto:info@herway.co.uk">info@herway.co.uk</a></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 HERWAY. All rights reserved. | <a href="privacy-policy.html">Privacy Policy</a> | <a href="terms-of-service.html">Terms of Service</a> | <a href="legal.html">Legal & Compliance</a></p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

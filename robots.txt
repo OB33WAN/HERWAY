@@ -1,13 +1,34 @@
+# Copyrighted to HERWAY Octopye Digital Designs (https://octopye.com) Created
 User-agent: *
 Allow: /
 Allow: /index.html
-Allow: /pages/
-Allow: /css/
-Allow: /js/
-Allow: /data/
-Allow: /assets/
+Allow: /book.html
+Allow: /drivers.html
+Allow: /about.html
+Allow: /contact.html
+Allow: /legal.html
+Allow: /privacy-policy.html
+Allow: /terms-of-service.html
+Allow: /styles.css
+Allow: /app.js
+Allow: /manifest.json
+Allow: /images/
 
 Disallow: /admin/
 Disallow: /private/
+Disallow: /.git/
+Disallow: /*.sql
+Disallow: /node_modules/
 
-Sitemap: https://wanderlusttraveladvisory.com/sitemap.txt
+# Specific rules for search engines
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# Crawl delay (in seconds)
+Crawl-delay: 1
+
+# Sitemap location
+Sitemap: https://herway.co.uk/sitemap.xml

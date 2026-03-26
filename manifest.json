@@ -1,0 +1,98 @@
+{
+  "name": "Herway - Women-Only Taxi Service",
+  "short_name": "Herway",
+  "description": "Safe, professional women-only taxi service in the UK. Driven by women, for everyone.",
+  "start_url": "/index.html",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "theme_color": "#FF6B9D",
+  "background_color": "#FFFFFF",
+  "categories": ["transportation", "travel"],
+  "screenshots": [
+    {
+      "src": "images/screenshots/screenshot-1.png",
+      "sizes": "540x720",
+      "type": "image/png",
+      "form_factor": "narrow"
+    },
+    {
+      "src": "images/screenshots/screenshot-2.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "form_factor": "wide"
+    }
+  ],
+  "icons": [
+    {
+      "src": "images/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "images/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "images/icon-maskable.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Book a Taxi",
+      "short_name": "Book",
+      "description": "Quickly book a taxi with Herway",
+      "url": "/book.html",
+      "icons": [
+        {
+          "src": "images/icon-96.png",
+          "sizes": "96x96",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "Become a Driver",
+      "short_name": "Driver",
+      "description": "Apply to become a Herway driver",
+      "url": "/drivers.html",
+      "icons": [
+        {
+          "src": "images/icon-96.png",
+          "sizes": "96x96",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "Contact Us",
+      "short_name": "Contact",
+      "description": "Get in touch with Herway",
+      "url": "/contact.html",
+      "icons": [
+        {
+          "src": "images/icon-96.png",
+          "sizes": "96x96",
+          "type": "image/png"
+        }
+      ]
+    }
+  ],
+  "share_target": {
+    "action": "/share",
+    "method": "POST",
+    "enctype": "application/x-www-form-urlencoded",
+    "params": {
+      "title": "title",
+      "text": "text",
+      "url": "url"
+    }
+  },
+  "prefer_related_applications": false
+}

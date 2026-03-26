@@ -1,0 +1,29 @@
+# HERWAY
+
+Project: HERWAY women-by-women taxi website (UK)
+Owner: HERWAY
+Design and Copyright: Octopye Digital Designs (https://octopye.com)
+
+## Scope
+- Public marketing and booking website
+- Female-first transport service messaging
+- Driver onboarding and compliance pages
+- Legal, privacy, and terms documentation
+
+## Important Pages
+- index.html
+- book.html
+- drivers.html
+- about.html
+- contact.html
+- legal.html
+- privacy-policy.html
+- terms-of-service.html
+
+## Policy Notes
+- Female-first service model
+- Safeguarding and disclosure expectations for bookings
+- UK legal and compliance positioning included in legal pages
+
+## Copyright
+Copyrighted to HERWAY Octopye Digital Designs (https://octopye.com) Created

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - HERWAY</title>
+    <link rel="manifest" href="manifest.json">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html" class="logo brand-merge"><span class="part-her">HER</span><span class="part-way">WAY</span></a>
+                <span class="tagline">Women by Women</span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link">Safety & About</a></li>
+                <li class="nav-item"><a href="book.html" class="nav-link">Book Now</a></li>
+                <li class="nav-item"><a href="drivers.html" class="nav-link">Become a Driver</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link active">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="page-header">
+        <h1>Get in Touch</h1>
+        <p>Women by women taxi support for bookings, verification questions, and passenger-context enquiries</p>
+    </section>
+
+    <div class="container">
+        <section class="contact-section">
+            <div class="contact-methods">
+                <div class="contact-card">
+                    <div class="contact-icon">💬</div>
+                    <h3>WhatsApp</h3>
+                    <p>Chat with us directly via WhatsApp for quick responses.</p>
+                    <a href="https://wa.me/YOUR_WHATSAPP_NUMBER" class="btn btn-primary">Message on WhatsApp</a>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-icon">✉️</div>
+                    <h3>Email</h3>
+                    <p>Send us an email and we'll respond within 24 hours.</p>
+                    <a href="mailto:info@herway.co.uk" class="btn btn-primary">Send Email</a>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-icon">📋</div>
+                    <h3>Contact Form</h3>
+                    <p>Fill out our contact form and we'll get back to you soon.</p>
+                    <a href="#contact-form" class="btn btn-primary">Go to Form</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Enquiry Form -->
+        <section class="enquiry-form-section" id="contact-form">
+            <h2>Send Us a Message</h2>
+            <form id="enquiryForm" class="enquiry-form">
+                <div class="form-group">
+                    <label for="enquiryName">Full Name *</label>
+                    <input type="text" id="enquiryName" name="enquiryName" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="enquiryEmail">Email Address *</label>
+                    <input type="email" id="enquiryEmail" name="enquiryEmail" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="enquiryPhone">Phone Number</label>
+                    <input type="tel" id="enquiryPhone" name="enquiryPhone">
+                </div>
+
+                <div class="form-group">
+                    <label for="enquiryType">Enquiry Type *</label>
+                    <select id="enquiryType" name="enquiryType" required>
+                        <option value="">Select type</option>
+                        <option value="booking">Booking Inquiry</option>
+                        <option value="driver">Driver Application Support</option>
+                        <option value="pricing">Pricing & Rates</option>
+                        <option value="complaint">Complaint or Feedback</option>
+                        <option value="partnership">Partnership Inquiry</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="enquirySubject">Subject *</label>
+                    <input type="text" id="enquirySubject" name="enquirySubject" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="enquiryMessage">Message *</label>
+                    <textarea id="enquiryMessage" name="enquiryMessage" rows="6" required></textarea>
+                </div>
+
+                <div class="checkbox-group">
+                    <label class="checkbox-label">
+                        <input type="checkbox" id="agreeContact" name="agreeContact" required>
+                        I agree to be contacted regarding my enquiry
+                    </label>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-large">Send Enquiry</button>
+                <p class="form-note">We'll respond to your message within 24 hours.</p>
+            </form>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq-section">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-container">
+                <details class="faq-item">
+                    <summary>How do I book a taxi with HERWAY?</summary>
+                    <p>You can book through WhatsApp or our booking form. HERWAY is women by women and female-first, so please include clear passenger context if anyone else is traveling (for example an elderly grandfather or two teenage boys).</p>
+                </details>
+
+                <details class="faq-item">
+                    <summary>What if I need immediate transportation?</summary>
+                    <p>Contact us via WhatsApp for the fastest response time. We often can arrange pickups within 30-60 minutes depending on driver availability in your area.</p>
+                </details>
+
+                <details class="faq-item">
+                    <summary>Do you operate outside of regular hours?</summary>
+                    <p>We offer flexible booking times. Contact us to check availability for your required date and time - we aim to accommodate requests whenever possible.</p>
+                </details>
+
+                <details class="faq-item">
+                    <summary>What about airport parking charges?</summary>
+                    <p>For airports like Heathrow with short-stay parking fees, these charges are included in your final quote. We'll provide a complete breakdown with no hidden costs.</p>
+                </details>
+
+                <details class="faq-item">
+                    <summary>Can I hire a driver for the full day?</summary>
+                    <p>Yes! Our full-day hire service is available at £25 per hour with a minimum of 4 hours. The driver stays with you throughout the day for maximum flexibility.</p>
+                </details>
+
+                <details class="faq-item">
+                    <summary>Are there discounts for regular bookings?</summary>
+                    <p>We offer competitive rates for regular bookings like school runs or weekly appointments. Contact us to discuss special rates for your needs.</p>
+                </details>
+
+                <details class="faq-item">
+                    <summary>How do I know the driver is qualified?</summary>
+                    <p>All HERWAY drivers are DBS checked, licensed PVH drivers with valid insurance. We maintain strict quality and safety standards.</p>
+                </details>
+
+                <details class="faq-item">
+                    <summary>What if I need a car seat for my child?</summary>
+                    <p>Let us know at booking if you need a car seat. We can arrange this in advance to ensure your child's safety and comfort.</p>
+                </details>
+
+                <details class="faq-item">
+                    <summary>How do I become a HERWAY driver?</summary>
+                    <p>Visit our "Become a Driver" page to learn about requirements and apply. The process includes application, document verification, DBS check, and online interview.</p>
+                </details>
+
+                <details class="faq-item">
+                    <summary>Do you operate in my area?</summary>
+                    <p>We're expanding across the UK. Contact us to check if we operate in your location or to express interest in having us service your area.</p>
+                </details>
+            </div>
+        </section>
+
+        <!-- Service Areas Section -->
+        <section class="service-areas">
+            <h2>Service Areas</h2>
+            <p>We currently operate around West London, mainly from Hounslow to Harrow and toward Slough/nearby areas. Contact us to check coverage for your exact pickup and destination.</p>
+            <div class="areas-info">
+                <p>For expansion plans or to request service outside the Hounslow-Harrow-Slough coverage zone, please get in touch using any of our contact methods above.</p>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>HERWAY</h4>
+                <p>Women by women taxi service providing safe, professional ground transportation.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="book.html">Book a Taxi</a></li>
+                    <li><a href="drivers.html">Become a Driver</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Get in Touch</h4>
+                <p>WhatsApp: <a href="https://wa.me/YOUR_WHATSAPP_NUMBER">Message us</a></p>
+                <p>Email: <a href="mailto:info@herway.co.uk">info@herway.co.uk</a></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 HERWAY. All rights reserved. | <a href="privacy-policy.html">Privacy Policy</a> | <a href="terms-of-service.html">Terms of Service</a> | <a href="legal.html">Legal & Compliance</a></p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
