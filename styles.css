@@ -1034,6 +1034,10 @@ body {
     color: var(--warning-color);
 }
 
+.requirements-section + .application-process {
+    margin-top: 2rem;
+}
+
 /* FAQ Section */
 .faq-container {
     max-width: 800px;
@@ -1398,7 +1402,7 @@ body {
 
 .incentives-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 2rem;
 }
 
@@ -1429,6 +1433,10 @@ body {
     .services-grid,
     .benefits-grid {
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    .incentives-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 }
 
@@ -1464,6 +1472,10 @@ body {
     .benefits-section h2,
     .cta-content h2 {
         font-size: 28px;
+    }
+
+    .incentives-grid {
+        grid-template-columns: 1fr;
     }
 
     .cta-content p {
