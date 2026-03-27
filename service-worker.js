@@ -1,15 +1,20 @@
 // Service Worker for Herway PWA
 const CACHE_NAME = 'herway-v1';
 const urlsToCache = [
-    '/',
-    '/index.html',
-    '/book.html',
-    '/drivers.html',
-    '/about.html',
-    '/contact.html',
-    '/styles.css',
-    '/app.js',
-    '/manifest.json'
+    './',
+    './index.html',
+    './book.html',
+    './drivers.html',
+    './about.html',
+    './contact.html',
+    './styles.css',
+    './app.js',
+    './manifest.json',
+    './images/favicon.svg',
+    './images/apple-touch-icon.svg',
+    './images/icon-192.svg',
+    './images/icon-512.svg',
+    './images/icon-maskable.svg'
 ];
 
 // Install Event - Cache files

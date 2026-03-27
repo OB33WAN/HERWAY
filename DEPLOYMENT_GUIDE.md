@@ -66,8 +66,8 @@ http-server -p 8000
 ### 1. Update Branding & Contact Info
 
 #### WhatsApp Link (in all HTML files):
-Find: `https://wa.me/YOUR_WHATSAPP_NUMBER`
-Replace with: `https://wa.me/YOUR_ACTUAL_NUMBER`
+Find: your current WhatsApp URL in the HTML files
+Replace with: `https://wa.me/447700000000` (example format)
 
 To create WhatsApp link:
 - Go to https://wa.me/
@@ -161,7 +161,7 @@ Use Formspree (free tier):
 2. Create project
 3. Update form action:
 ```html
-<form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+<form action="https://formspree.io/f/abc123example" method="POST">
 ```
 
 #### Option B: Custom Backend

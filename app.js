@@ -125,8 +125,6 @@ function initializeBookingForm() {
         // Additional fields based on trip type
         if (data.tripType === 'airport') {
             data.airport = formData.get('airport');
-        } else if (data.tripType === 'hourly') {
-            data.hours = formData.get('hours');
         }
 
         if (data.childTraveler === 'Yes') {
@@ -144,13 +142,18 @@ function initializeBookingForm() {
 
         // Reset form
         form.reset();
-        document.getElementById('childDetails').classList.add('hidden');
+        const childDetails = document.getElementById('childDetails');
+        if (childDetails) {
+            childDetails.classList.add('hidden');
+        }
         const childSeatCountGroup = document.getElementById('childSeatCountGroup');
         if (childSeatCountGroup) {
             childSeatCountGroup.classList.add('hidden');
         }
-        document.getElementById('airportOptions').classList.add('hidden');
-        document.getElementById('hourlyOptions').classList.add('hidden');
+        const airportOptions = document.getElementById('airportOptions');
+        if (airportOptions) {
+            airportOptions.classList.add('hidden');
+        }
         setBookingDateAndTimeConstraints();
 
         // Show success message
@@ -275,7 +278,6 @@ function toggleChildSeatCount() {
 function toggleTripTypeOptions() {
     const tripTypeSelect = document.getElementById('tripType');
     const airportOptions = document.getElementById('airportOptions');
-    const hourlyOptions = document.getElementById('hourlyOptions');
     
     if (!tripTypeSelect) return;
 
@@ -286,14 +288,6 @@ function toggleTripTypeOptions() {
             airportOptions.classList.remove('hidden');
         } else {
             airportOptions.classList.add('hidden');
-        }
-    }
-
-    if (hourlyOptions) {
-        if (tripType === 'hourly') {
-            hourlyOptions.classList.remove('hidden');
-        } else {
-            hourlyOptions.classList.add('hidden');
         }
     }
 }

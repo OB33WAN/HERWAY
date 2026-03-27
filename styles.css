@@ -456,7 +456,7 @@ body {
 /* Buttons */
 .btn {
     padding: 12px 24px;
-    border: none;
+    border: 2px solid transparent;
     border-radius: 999px;
     font-size: 16px;
     font-weight: 600;
@@ -486,13 +486,16 @@ body {
 .btn-primary {
     background-color: var(--primary-color);
     color: var(--text-white);
+    border-color: var(--primary-color);
 }
 
 .btn-primary:hover {
-    background-color: var(--primary-dark);
+    background-color: #000000;
+    color: #4f8f5f;
+    border-color: #000000;
     transform: translateY(-3px);
     box-shadow: var(--shadow-lg);
-    filter: saturate(1.05);
+    filter: none;
 }
 
 .btn:hover::before {
@@ -506,10 +509,23 @@ body {
 }
 
 .btn-secondary:hover {
-    background-color: var(--text-white);
-    color: var(--primary-color);
+    background-color: #000000;
+    color: #4f8f5f;
+    border-color: #000000;
     transform: translateY(-3px);
     box-shadow: var(--shadow-lg);
+}
+
+.btn:hover {
+    background-color: #000000;
+    color: #4f8f5f;
+    border-color: #000000;
+}
+
+.btn-cta-book {
+    background-color: transparent;
+    color: #000000;
+    border-color: #000000;
 }
 
 .btn:active {
@@ -589,6 +605,14 @@ body {
     margin: 2rem 0;
 }
 
+.pricing-info,
+.why-female-drivers,
+.driver-safety {
+    padding: 4rem 2rem;
+    background-color: var(--bg-white);
+    margin: 2rem 0;
+}
+
 .why-choose h2,
 .services h2,
 .assurance h2,
@@ -598,6 +622,24 @@ body {
     font-size: 36px;
     margin-bottom: 3rem;
     color: var(--text-dark);
+}
+
+.pricing-info h2,
+.why-female-drivers h2,
+.driver-safety h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 1rem;
+    color: var(--text-dark);
+}
+
+.pricing-info > p,
+.why-female-drivers > p,
+.driver-safety > p {
+    text-align: center;
+    color: var(--text-light);
+    max-width: 860px;
+    margin: 0 auto 2rem;
 }
 
 .features-grid,
@@ -1330,6 +1372,49 @@ body {
 }
 
 .reason-card p {
+    color: var(--text-light);
+    font-size: 14px;
+}
+
+.driver-incentives {
+    padding: 4rem 2rem;
+    background-color: var(--bg-white);
+    margin: 2rem 0;
+}
+
+.driver-incentives h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 1rem;
+    color: var(--text-dark);
+}
+
+.driver-incentives > p {
+    text-align: center;
+    color: var(--text-light);
+    max-width: 860px;
+    margin: 0 auto 2rem;
+}
+
+.incentives-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.incentive-card {
+    background: var(--bg-light);
+    padding: 1.75rem;
+    border-radius: 10px;
+    border: 1px solid var(--border-color);
+}
+
+.incentive-card h3 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.incentive-card p {
     color: var(--text-light);
     font-size: 14px;
 }

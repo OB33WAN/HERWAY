@@ -14,7 +14,6 @@ A professional, user-friendly PWA (Progressive Web App) website for a women-by-w
 - Taxi booking system
 - Airport transfers with parking cost information
 - School run services
-- Full-day hourly hire rates
 - WhatsApp integration for quick bookings
 
 👩 **Women-Focused Safety**
@@ -99,7 +98,7 @@ Herway/
   - Passenger details
   - Pickup and destination
   - Child traveler options
-  - Trip type selection (standard, airport, school, hourly)
+  - Trip type selection (standard, airport, school)
   - Cost indicators
 - Service pricing table
 
@@ -208,7 +207,7 @@ Edit the CSS variables in `styles.css`:
 
 ### Contact Information
 Update WhatsApp and email links in all HTML files:
-- Replace `YOUR_WHATSAPP_NUMBER` with your WhatsApp business link
+- Replace each WhatsApp link with your real WhatsApp business link in international format (example: `https://wa.me/447700000000`)
 - Replace `info@herway.co.uk` with your email address
 
 ### Pricing
