@@ -518,9 +518,9 @@ iframe {
 }
 
 .btn-primary:hover {
-    background-color: #000000;
-    color: #4f8f5f;
-    border-color: #000000;
+    background-color: #FFFFFF;
+    color: var(--primary-color);
+    border-color: var(--primary-color);
     transform: translateY(-3px);
     box-shadow: var(--shadow-lg);
     filter: none;
@@ -537,14 +537,22 @@ iframe {
 }
 
 .btn-secondary:hover {
-    background-color: #000000;
-    color: #4f8f5f;
-    border-color: #000000;
+    background-color: #FFFFFF;
+    color: var(--primary-color);
+    border-color: var(--primary-color);
     transform: translateY(-3px);
     box-shadow: var(--shadow-lg);
 }
 
 .btn:hover {
+    background-color: #FFFFFF;
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+[data-theme="dark"] .btn-primary:hover,
+[data-theme="dark"] .btn-secondary:hover,
+[data-theme="dark"] .btn:hover {
     background-color: #000000;
     color: #4f8f5f;
     border-color: #000000;
