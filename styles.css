@@ -49,15 +49,25 @@ html {
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
+    font-size: clamp(15px, 1.1vw, 17px);
     color: var(--text-dark);
     background-color: var(--bg-light);
     overflow-x: hidden;
 }
 
 .container {
-    max-width: 1200px;
+    width: min(1200px, 100%);
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 clamp(14px, 2.4vw, 22px);
+}
+
+img,
+svg,
+video,
+canvas,
+iframe {
+    max-width: 100%;
+    height: auto;
 }
 
 /* Navigation Bar */
@@ -261,6 +271,16 @@ body {
 
 /* Responsive Navigation */
 @media (max-width: 768px) {
+    .nav-container {
+        position: relative;
+        flex-wrap: nowrap;
+        gap: 0.75rem;
+    }
+
+    .nav-logo {
+        flex: 1;
+    }
+
     .nav-menu {
         position: absolute;
         left: -100%;
@@ -293,9 +313,17 @@ body {
     }
 
     .theme-toggle {
-        margin-left: 0.5rem;
+        order: 2;
+        margin-left: 0;
+        margin-right: 0.75rem;
         font-size: 12px;
         padding: 0.35rem 0.65rem;
+    }
+
+    .hamburger {
+        order: 3;
+        margin-left: 0;
+        margin-right: 0.1rem;
     }
 
     .hamburger.active span:nth-child(1) {
@@ -315,16 +343,16 @@ body {
 .hero {
     background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
     color: var(--text-white);
-    padding: 4rem 2rem;
+    padding: clamp(2.25rem, 5vw, 4rem) clamp(1rem, 3.5vw, 2rem);
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 3rem;
     align-items: center;
-    min-height: 500px;
+    min-height: clamp(360px, 58vh, 500px);
 }
 
 .hero-content h1 {
-    font-size: 48px;
+    font-size: clamp(2rem, 5vw, 3rem);
     font-family: var(--title-font);
     font-weight: 700;
     letter-spacing: 0.5px;
@@ -399,7 +427,7 @@ body {
 }
 
 .hero-content p {
-    font-size: 18px;
+    font-size: clamp(1rem, 2.3vw, 1.125rem);
     font-family: var(--subtitle-font);
     font-weight: 500;
     margin-bottom: 2rem;
@@ -455,7 +483,7 @@ body {
 
 /* Buttons */
 .btn {
-    padding: 12px 24px;
+    padding: clamp(10px, 1.9vw, 12px) clamp(18px, 3.5vw, 24px);
     border: 2px solid transparent;
     border-radius: 999px;
     font-size: 16px;
@@ -543,21 +571,21 @@ body {
 }
 
 .btn-large {
-    padding: 16px 32px;
-    font-size: 18px;
+    padding: clamp(12px, 2.2vw, 16px) clamp(22px, 4vw, 32px);
+    font-size: clamp(1rem, 2.2vw, 1.125rem);
 }
 
 /* Page Header */
 .page-header {
     background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
     color: var(--text-white);
-    padding: 3rem 2rem;
+    padding: clamp(2rem, 4.5vw, 3rem) clamp(1rem, 3vw, 2rem);
     text-align: center;
     margin-bottom: 2rem;
 }
 
 .page-header h1 {
-    font-size: 42px;
+    font-size: clamp(1.75rem, 4.6vw, 2.625rem);
     font-family: var(--title-font);
     font-weight: 400;
     letter-spacing: 0.5px;
@@ -565,7 +593,7 @@ body {
 }
 
 .page-header p {
-    font-size: 18px;
+    font-size: clamp(1rem, 2.2vw, 1.125rem);
     font-family: var(--subtitle-font);
     font-weight: 500;
     opacity: 0.95;
@@ -600,7 +628,7 @@ body {
 .assurance,
 .values-section,
 .benefits-section {
-    padding: 4rem 2rem;
+    padding: clamp(2.25rem, 4.5vw, 4rem) clamp(1rem, 3vw, 2rem);
     background-color: var(--bg-white);
     margin: 2rem 0;
 }
@@ -608,7 +636,7 @@ body {
 .pricing-info,
 .why-female-drivers,
 .driver-safety {
-    padding: 4rem 2rem;
+    padding: clamp(2.25rem, 4.5vw, 4rem) clamp(1rem, 3vw, 2rem);
     background-color: var(--bg-white);
     margin: 2rem 0;
 }
@@ -619,7 +647,7 @@ body {
 .values-section h2,
 .benefits-section h2 {
     text-align: center;
-    font-size: 36px;
+    font-size: clamp(1.75rem, 4vw, 2.25rem);
     margin-bottom: 3rem;
     color: var(--text-dark);
 }
@@ -628,7 +656,7 @@ body {
 .why-female-drivers h2,
 .driver-safety h2 {
     text-align: center;
-    font-size: 36px;
+    font-size: clamp(1.75rem, 4vw, 2.25rem);
     margin-bottom: 1rem;
     color: var(--text-dark);
 }
@@ -646,7 +674,7 @@ body {
 .services-grid,
 .benefits-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr));
     gap: 2rem;
 }
 
@@ -735,18 +763,18 @@ body {
 .cta-section {
     background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
     color: var(--text-white);
-    padding: 4rem 2rem;
+    padding: clamp(2.25rem, 4.5vw, 4rem) clamp(1rem, 3vw, 2rem);
     text-align: center;
     margin: 2rem 0;
 }
 
 .cta-content h2 {
-    font-size: 36px;
+    font-size: clamp(1.75rem, 4vw, 2.25rem);
     margin-bottom: 1rem;
 }
 
 .cta-content p {
-    font-size: 18px;
+    font-size: clamp(1rem, 2.3vw, 1.125rem);
     margin-bottom: 2rem;
     opacity: 0.95;
 }
@@ -761,9 +789,17 @@ body {
 .booking-methods,
 .requirements-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr));
     gap: 2rem;
     margin-bottom: 3rem;
+}
+
+.requirements-section > p + .requirements-grid {
+    margin-top: 1.5rem;
+}
+
+.requirements-section > p {
+    margin-bottom: 1.5rem;
 }
 
 .method-card,
@@ -949,6 +985,24 @@ body {
     display: flex;
     gap: 2rem;
     margin-bottom: 2rem;
+}
+
+@media (max-width: 900px) {
+    .timeline-item {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .timeline-number {
+        width: 42px;
+        height: 42px;
+        font-size: 16px;
+    }
+
+    .assurance-point {
+        flex-direction: column;
+        gap: 1rem;
+    }
 }
 
 .timeline-number {
